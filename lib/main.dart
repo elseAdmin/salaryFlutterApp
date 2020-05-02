@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web/app_config.dart';
 import 'package:flutter_web/company/company_page.dart';
+import 'package:flutter_web/company/new_company.dart';
 import 'package:flutter_web/dashboard/dashboard_page.dart';
 import 'package:flutter_web/login/login_page.dart';
 import 'package:flutter_web/pages/gallery_page.dart';
@@ -43,6 +44,7 @@ class SalaryApp extends StatelessWidget {
         RouteNames.login: (_) => LoginPage(),
         RouteNames.dashboard: (_) => DashBoardPage(),
         RouteNames.companyPanel: (_) => CompanyPage(),
+        RouteNames.companyNew: (_) => NewCompany(),
         RouteNames.home: (_) => const HomePage(),
         RouteNames.gallery: (_) => const GalleryPage(),
         RouteNames.slideshow: (_) => const SlideshowPage(),

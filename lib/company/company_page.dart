@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web/constants/page_titles.dart';
+import 'package:flutter_web/constants/route_names.dart';
 import 'package:flutter_web/widgets/app_scaffold.dart';
 
 class CompanyPage extends StatelessWidget {
@@ -27,7 +28,11 @@ class CompanyPage extends StatelessWidget {
               ),
               RaisedButton(
                 color: Colors.white,
-                onPressed: null,
+                onPressed: () {
+                  Navigator.pushNamed(context,
+                    RouteNames.companyNew,
+                  );
+                },
                 child: Text(
                   'Add New Company',
                   style: TextStyle(
