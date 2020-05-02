@@ -13,8 +13,8 @@ import 'constants/route_names.dart';
 
 void main() {
   var configuredApp = AppConfig(
-    apiBaseUrl: 'http://localhost:8080/',
-    signInUrl: 'token/generate-token',
+    apiBaseUrl: 'https://api.example.com/',
+    signInUrl: 'token/generate',
     child: SalaryApp(),
   );
 
